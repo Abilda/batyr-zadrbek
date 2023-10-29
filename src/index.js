@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route, withRouter } from 'react-router-dom';
+import DetailedGuitarInfo from './components/DetailedGuitarInfo';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App/>} />
+          <Route path="/DetailedGuitarInfo" element={<DetailedGuitarInfo/>} />
+        </Routes>
+      </BrowserRouter>    
   </React.StrictMode>
 );
 

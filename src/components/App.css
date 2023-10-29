@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+  background-color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.guitarList {
+  border: 2px solid black;
+  width: 80%;
+  margin-left: 10%;
+  min-height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  height: 100px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.GuitarItem {
+  display: inline-block;
+  margin: 5px;
+  height: 200px;
+  width: 140px;
+  border: 10px solid red;
+}
+
+.SearchBox {
+  height: 30px;
+  width: 100%;
+}
+
+.left-element {
+  float: left; /* Float it to the left */
+  display: inline-block;
+}
+
+/* Style the right element */
+.right-element {
+  float: right; /* Float it to the right */
+  display: inline-block;
+}
+
+#changingImage {
+  height: 100px;
+  background-color: rgb(9, 9, 69);
+  color: blue;
+}
+
+.guitarCategories {
+  width: 80%;
+  border: 1px solid gray;
+  height: 40px;
+  text-align: left;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.guitarCategory {
+  display: inline-block;
+  border: 1px solid gray;
+  height: 40px;
+  text-align: left;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.guitarCategoryFirst {
+  display: inline-block;
+  height: 40px;
+  width: 35%;
+  text-align: center;
+}
+
+.guitarCategoryLast{
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  padding-left: 10%;
+}
+
+.shoppingCartAndprofile {
+  width: 19%;
+  border: 1px solid gray;
+  height: 40px;
+  text-align: center;
+  padding-top: 11px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#categories {
+  width: 100%;
+  display: inline-block;
+}
+
+.DetailedGuitarInfo {
+  border: 2px solid black;
+  width: 82%;
+  margin-left: 9%;
+  margin-top: 4%;
+}
+
+.DetailedGuitarImg {
+  position: absolute;
+  border: 3px solid black;
+  width: 50%;
+  left: 6%;
+}
+
+#InfoForGuitarImg {
+  position: absolute;
+  left:56%;
+  margin-left: 4%;
+}
+
+#DescriptionAndPrice {
+  border: 1px solid gray;
+  width: 200%;
+  text-align: left;
+  padding-left: 15px;
+}
